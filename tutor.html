@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Find Tutors</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Navigation Header -->
+  <header class="header">
+    <div class="logo">
+        <h1>Tutor Finder</h1>
+    </div>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="borrowing.html">Borrow Items</a></li>
+            <li><a href="listing.html">Lend Items</a></li>
+            <li><a href="tutoring.html">Find Tutors</a></li>
+            <li><a href="become_tutor.html">Become a Tutor</a></li>
+        </ul>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero-section">
+    <div class="content">
+      <h1>Find the Perfect Tutor</h1>
+      <p>Browse through a list of tutors to help you achieve your goals.</p>
+      <form class="search-form">
+        <input type="text" placeholder="What subject are you looking for?" />
+        <input type="text" placeholder="Location" />
+        <button type="submit">Search</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Tutor Listings Section -->
+  <main>
+    <section class="tutors-section">
+      <h2>Featured Tutors</h2>
+      <div class="tutors-container">
+        <!-- Tutor 1 -->
+        <div class="tutor-card">
+          <img src="tutor1.jpg" alt="Tutor 1" class="tutor-img">
+          <div class="tutor-info">
+            <h3>John Doe</h3>
+            <p>Math and Physics Tutor</p>
+            <div class="rating">
+              ⭐⭐⭐⭐ (4.8)
+            </div>
+            <button class="follow-btn">Follow</button>
+          </div>
+        </div>
+
+        <!-- Tutor 2 -->
+        <div class="tutor-card">
+          <img src="tutor2.jpg" alt="Tutor 2" class="tutor-img">
+          <div class="tutor-info">
+            <h3>Jane Smith</h3>
+            <p>English and Literature Tutor</p>
+            <div class="rating">
+              ⭐⭐⭐⭐⭐ (5.0)
+            </div>
+            <button class="follow-btn">Follow</button>
+          </div>
+        </div>
+
+        <!-- Tutor 3 -->
+        <div class="tutor-card">
+          <img src="tutor3.jpg" alt="Tutor 3" class="tutor-img">
+          <div class="tutor-info">
+            <h3>Michael Johnson</h3>
+            <p>Chemistry Tutor</p>
+            <div class="rating">
+              ⭐⭐⭐⭐ (4.5)
+            </div>
+            <button class="follow-btn">Follow</button>
+          </div>
+        </div>
+
+        <!-- Tutor 4 -->
+        <div class="tutor-card">
+          <img src="tutor4.jpg" alt="Tutor 4" class="tutor-img">
+          <div class="tutor-info">
+            <h3>Sarah Lee</h3>
+            <p>Programming Tutor</p>
+            <div class="rating">
+              ⭐⭐⭐⭐⭐ (5.0)
+            </div>
+            <button class="follow-btn">Follow</button>
+          </div>
+        </div>
+        
+        <!-- Tutor 5 -->
+        <div class="tutor-card">
+          <img src="tutor5.jpg" alt="Tutor 5" class="tutor-img">
+          <div class="tutor-info">
+            <h3>Anna Kim</h3>
+            <p>Biology Tutor</p>
+            <div class="rating">
+              ⭐⭐⭐⭐ (4.7)
+            </div>
+            <button class="follow-btn">Follow</button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer Section -->
+  <footer>
+    <p>&copy; 2024 Tutor Finder Platform</p>
+  </footer>
+
+  <script>
+    const followButtons = document.querySelectorAll('.follow-btn');
+    followButtons.forEach(button => {
+      button.addEventListener('click', function() {
+        if (button.textContent === 'Follow') {
+          button.textContent = 'Following';
+        } else {
+          button.textContent = 'Follow';
+        }
+      });
+    });
+  </script>
+</body>
+</html>

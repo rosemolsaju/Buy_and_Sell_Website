@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Item Lending & Renting Platform</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<header class="header">
+    <div class="logo">
+        <h1> </h1>
+    </div>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="borrowing.html">Borrow Items</a></li>
+            <li><a href="listing.html">Lend Items</a></li>
+            <li><a href="tutoring.html">Find Tutors</a></li>
+            <li><a href="become_tutor.html">Become a Tutor</a></li>
+        </ul>
+    </nav>
+</header>
+
+  <!-- Hero Section Header (Red Background) -->
+  <header class="hero-section">
+    <div class="content">
+      <h1>Borrow almost anything from IIT</h1>
+      <form class="search-form">
+        <input type="text" placeholder="What are you looking for?" />
+        <input type="text" placeholder="What's your location?" />
+        <button type="submit">Search</button>
+      </form>
+      <p>Explore thousands of items to experience or list your own to support the community!</p>
+    </div>
+  </header>
+
+  <!-- Featured Items Section -->
+  <main>
+    <section class="items-section">
+      <h2>Featured Items</h2>
+      <div class="items-container">
+        <!-- Item 1 -->
+        <div class="item">
+          <img src="camera.jpg" alt="Cannon Camera">
+          <h3>Camera for Rent</h3>
+          <p class="description">High-quality DSLR camera for photography.</p>
+          <div class="reviews">
+            <p>Rating: ⭐⭐⭐⭐ (4.5)</p>
+          </div>
+          <button class="like-btn">❤️ Like</button>
+          <div class="comments">
+            <h4>Comments:</h4>
+            <ul>
+              <li>Great item! - James T.</li>
+              <li>Highly recommended and takes clear photos. - Selena</li>
+            </ul>
+            <input type="text" placeholder="Add a comment..." />
+            <button>Add Comment</button>
+          </div>
+        </div>
+
+        <!-- Item 2 -->
+        <div class="item">
+          <img src="tripod 2.jpg" alt="Tripod">
+          <h3>Tripod for rent</h3>
+          <p class="description">Tripod for holding cameras</p>
+          <div class="reviews">
+            <p>Rating: ⭐⭐⭐⭐⭐ (5.0)</p>
+          </div>
+          <button class="like-btn">❤️ Like</button>
+          <div class="comments">
+            <h4>Comments:</h4>
+            <ul>
+              <li>Very useful for still photography - Joe</li>
+              <li>Comfortable and easy to set up. - Mary S</li>
+            </ul>
+            <input type="text" placeholder="Add a comment..." />
+            <button>Add Comment</button>
+          </div>
+        </div>
+
+        <!-- Item 3 -->
+        <div class="item">
+            <img src="graphing calculator.jpg" alt="Graphing calculator">
+            <h3>Graphing calculator</h3>
+            <p class="description">Graphing Calculator for Maths</p>
+            <div class="reviews">
+              <p>Rating: ⭐⭐⭐⭐ (4.0)</p>
+            </div>
+            <button class="like-btn">❤️ Like</button>
+            <div class="comments">
+              <h4>Comments:</h4>
+              <ul>
+                <li>Good for maths exams - Rose</li>
+                <li>SO needed - May</li>
+              </ul>
+              <input type="text" placeholder="Add a comment..." />
+              <button>Add Comment</button>
+            </div>
+          </div>
+
+
+        <!-- Item 2 -->
+        <div class="item">
+            <img src="tripod.jpg" alt="Tripod against white background">
+            <h3>Tripod for rent</h3>
+            <p class="description">Tripod</p>
+            <div class="reviews">
+              <p>Rating: ⭐⭐⭐⭐⭐ (5.0)</p>
+            </div>
+            <button class="like-btn">❤️ Like</button>
+            <div class="comments">
+              <h4>Comments:</h4>
+              <ul>
+                <li>solid camera tripod - Jamie</li>
+                <li>easy to use. - jerrisa</li>
+              </ul>
+              <input type="text" placeholder="Add a comment..." />
+              <button>Add Comment</button>
+            </div>
+          </div>  
+
+        <!-- Item 4 -->
+        <div class="item">
+          <img src="paints.jpg" alt="painting equipment">
+          <h3>paints</h3>
+          <p class="description">oil paints barely used</p>
+          <div class="reviews">
+            <p>Rating: ⭐⭐⭐⭐⭐ (5.0)</p>
+          </div>
+          <button class="like-btn">❤️ Like</button>
+          <div class="comments">
+            <h4>Comments:</h4>
+            <ul>
+              <li>smooth paint - Caleb</li>
+            </ul>
+            <input type="text" placeholder="Add a comment..." />
+            <button>Add Comment</button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+
+  <!-- Borrowing Section (appears after item listings) -->
+  <section class="borrowing-section">
+    <h2>Borrow an Item</h2>
+    <form class="borrow-form">
+      <label for="item-name">Item Name:</label>
+      <input type="text" id="item-name" name="item-name" placeholder="Item you want to borrow" required />
+
+      <label for="borrow-date">Select Date:</label>
+      <input type="date" id="borrow-date" name="borrow-date" required />
+
+      <label for="borrow-time">Select Time:</label>
+      <input type="time" id="borrow-time" name="borrow-time" required />
+
+      <button type="submit" class="borrow-btn">Confirm Borrowing</button>
+    </form>
+  </section>
+
+  <!-- Footer Section -->
+  <footer>
+    <p> </p>
+  </footer>
+</body>
+</html>

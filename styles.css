@@ -1,0 +1,327 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  h1, h2, h3, p {
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Hero Section Styling (Red Background) */
+.hero-section {
+    background-color: red; /* Red background */
+    color: white;
+    padding: 50px 20px;
+    text-align: center;
+  }
+  
+  .hero-section .search-form {
+    margin-top: 20px;
+  }
+  
+  .hero-section input, .hero-section button {
+    padding: 10px;
+    margin: 5px;
+  }
+  
+  .hero-section button {
+    background-color: white;
+    color: red;
+    border: none;
+  }
+  
+  .hero-section button:hover {
+    background-color: #f1f1f1;
+  }
+  
+  .search-form input {
+    margin: 5px;
+    padding: 10px;
+    width: 200px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+  }
+  
+  .search-form button {
+    padding: 10px 20px;
+    background-color: #ff9800;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+  }
+  
+  /* Items Section */
+  .items-section {
+    padding: 20px;
+    background-color: #f9f9f9;
+  }
+  
+  .items-section h2 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  /* Items Container */
+  .items-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  /* Individual Item */
+  .item {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    width: 300px;
+    padding: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .item img {
+    width: 100%;
+    border-radius: 10px;
+  }
+  
+  .item h3 {
+    margin: 10px 0;
+  }
+  
+  .item .description {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 10px;
+  }
+  
+  .item .reviews {
+    font-size: 14px;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .item .like-btn {
+    background-color: #ff5722;
+    border: none;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .item .comments {
+    margin-top: 10px;
+  }
+  
+  .item .comments h4 {
+    margin-bottom: 5px;
+  }
+  
+  .item .comments ul {
+    list-style: none;
+    padding: 0;
+    font-size: 14px;
+  }
+  
+  .item .comments input {
+    width: 80%;
+    padding: 5px;
+    margin-right: 5px;
+  }
+  
+  .item .comments button {
+    padding: 5px 10px;
+    background-color: #4caf50;
+    border: none;
+    color: white;
+    cursor: pointer;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .items-container {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .item {
+      width: 90%;
+    }
+  }
+  
+  /* Item Listing Form Section */
+.listing-form-section {
+  padding: 40px 20px;
+}
+
+.listing-form-section h2 {
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.listing-form {
+  max-width: 600px;
+  margin: 0 auto;
+  background-color: white;
+  padding: 20px;
+  padding-right: 40px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  backdrop-filter: blur(60px);
+}
+
+.form-group textarea {
+  height: 100px;
+}
+
+#item-image {
+  padding: 5px;
+}
+
+#item-image + p {
+  color: #888;
+  margin-top: 5px;
+}
+
+/* Submit Button */
+.submit-btn {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%;
+  font-size: 1.1rem;
+}
+
+.submit-btn:hover {
+  background-color: #45a049;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    bottom: 0;
+    margin-top: 150px;
+    padding: 15px;
+    background: #000;
+}
+
+/* Borrowing Section Styling */
+.borrowing-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f9f9f9; /* Light background for the borrowing section */
+    padding: 20px;
+    margin-top: 30px; /* Adds some space between the content above and this form */
+  }
+  
+  /* Form Styling */
+  .borrow-form {
+    background-color: white;
+    padding: 20px;
+    padding-right: 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px; /* Limit the form width */
+  }
+  
+  /* Form Elements */
+  .borrow-form label {
+    font-size: 16px;
+    margin-bottom: 8px;
+    display: block;
+  }
+  
+  .borrow-form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+  }
+  
+  .borrow-form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .borrow-form button:hover {
+    background-color: #45a049;
+  }
+  
+  /* Additional Styling for Headers */
+  .borrowing-section h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+  }
+
+  /* Header */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background: #000000;  /* Set background to black */
+}
+
+.header .logo h1 {
+    margin: 0;
+    color: #ff0000; /* Red text for the logo */
+}
+
+.header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.header nav ul li {
+    margin: 0;
+}
+
+.header nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.header nav ul li a:hover {
+    color: #ff0000; /* Red text on hover */
+}
+
